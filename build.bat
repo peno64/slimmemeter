@@ -1,0 +1,1 @@
+esphome compile slimmelezer.yaml
