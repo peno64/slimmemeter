@@ -4,28 +4,28 @@
 0-0:96.1.4(50216)
 0-0:96.1.1(3153414731313035333130343239)
 0-0:1.0.0(221215163741W)
-1-0:1.8.1(000079.730*kWh)                  // el dag
-1-0:1.8.2(000065.040*kWh)                  // el nacht
-1-0:2.8.1(000000.000*kWh)
-1-0:2.8.2(000000.000*kWh)
+1-0:1.8.1(000079.730*kWh)                # electricity consumed day
+1-0:1.8.2(000065.040*kWh)                # electricity consumed night
+1-0:2.8.1(000000.000*kWh)                # electricity delivered day
+1-0:2.8.2(000000.000*kWh)                # electricity delivered night
 0-0:96.14.0(0001)
-1-0:1.7.0(00.773*kW)
+1-0:1.7.0(00.773*kW)                     # power consumed
 1-0:2.7.0(00.000*kW)
-1-0:21.7.0(00.773*kW)
+1-0:21.7.0(00.773*kW)                    # power consumed
 1-0:22.7.0(00.000*kW)
-1-0:32.7.0(235.7*V)
-1-0:31.7.0(003.79*A)
+1-0:32.7.0(235.7*V)                      # voltage phase 1
+1-0:31.7.0(003.79*A)                     # current phase 1
 0-0:96.3.10(1)
 0-0:17.0.0(999.9*kW)
 1-0:31.4.0(999*A)
 0-0:96.13.0()
-0-1:24.1.0(003) /* Device-Type gas */ gas_device_type
-0-1:96.1.1(374D495432323030313430313239) /* Equipment identifier (Gas) BE */ gas_equipment_id_be
-0-1:24.4.0(1) /* Valve position Gas (on/off/released) (Note: Removed in 4.0.7 / 4.2.2 / 5.0). */  gas_valve_position
-0-1:24.2.3(221215163708W)(00095.492*m3) // gas /* Last 5-minute value (temperature converted), gas delivered to client BE    gas_delivered_be
-0-2:24.1.0(007) /* Device-Type water */   water_device_type
-0-2:96.1.1(3853455430303030323133373836) /* Equipment identifier (water) BE */  water_equipment_id 96.1.0 in header!!!
-0-2:24.2.1(221215163650W)(00000.613*m3) // water /* Last 5-minute Meter reading in 0,001 m3 and capture time   water_delivered
+0-1:24.1.0(003)                          # Device-Type gas - gas_device_type
+0-1:96.1.1(374D495432323030313430313239) # Equipment identifier (Gas) BE - gas_equipment_id_be
+0-1:24.4.0(1)                            # Valve position Gas (on/off/released) (Note: Removed in 4.0.7 / 4.2.2 / 5.0). - gas_valve_position
+0-1:24.2.3(221215163708W)(00095.492*m3)  # gas value - Last 5-minute value (temperature converted), gas delivered to client BE - gas_delivered_be
+0-2:24.1.0(007)                          # Device-Type water - water_device_type
+0-2:96.1.1(3853455430303030323133373836) # Equipment identifier (water) BE -  water_equipment_id - 96.1.0 in header!!!
+0-2:24.2.1(221215163650W)(00000.613*m3)  # water - Last 5-minute Meter reading in 0,001 m3 and capture time -  water_delivered
 !F46F
 /FLU5\253770234_A
 
@@ -30463,4 +30463,3 @@
 0-2:96.1.1(3853455430303030323133373836)
 0-2:24.2.1(221215165150W)(00000.613*m3)
 !B0DC
-/FLU5\253770234_A
