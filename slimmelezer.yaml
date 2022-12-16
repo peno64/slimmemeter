@@ -1,3 +1,10 @@
+# Note that next to this file a files secrets.yaml must exist with the following content (without the leading #):
+
+#wifi_ssid: "your wifi sid"
+#wifi_password: "your wigi password"
+
+#Replace your wifi sid and your wifi password with your actual wifi name and password and keep the quotes.
+
 substitutions:
   device_name: slimmelezer
   device_description: "DIY P1 module to read your smart meter"
