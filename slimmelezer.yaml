@@ -136,6 +136,8 @@ sensor:
     state_class: total_increasing
     device_class: "energy"
     lambda: |-
+#     The conversion factor from m3 to kWh depends on many factors.
+#     Check your (year) bill. It should show the usage in m3 and then also in kWh. Divide the two and you should get the factor which will be a year average value.
       return id(gas_delivered_belgium).state * 11.78;
 
 text_sensor:
