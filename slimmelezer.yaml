@@ -122,12 +122,21 @@ sensor:
     gas_delivered_be:
       name: "Gas Consumed"
       unit_of_measurement: "m³"
+      id: gas_delivered_belgium
       state_class: total_increasing
   - platform: uptime
     name: "SlimmeLezer Uptime"
   - platform: wifi_signal
     name: "SlimmeLezer Wi-Fi Signal"
     update_interval: 60s
+  - platform: template
+    name: "Gas Consumed in kWh"
+    unit_of_measurement: "kWh"
+    accuracy_decimals: 3
+    state_class: total_increasing
+    device_class: "energy"
+    lambda: |-
+      return id(gas_delivered_belgium).state * 11.4;
 
 text_sensor:
   - platform: dsmr
