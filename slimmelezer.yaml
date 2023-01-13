@@ -35,6 +35,7 @@ captive_portal:
 # Enable logging
 logger:
   baud_rate: 0
+#  level: DEBUG
 
 # Enable Home Assistant API
 api:
@@ -135,9 +136,9 @@ sensor:
     accuracy_decimals: 3
     state_class: total_increasing
     device_class: "energy"
-    lambda: |-
 #     The conversion factor from m3 to kWh depends on many factors.
 #     Check your (year) bill. It should show the usage in m3 and then also in kWh. Divide the two and you should get the factor which will be a year average value.
+    lambda: |-
       return id(gas_delivered_belgium).state * 11.78;
 
 text_sensor:
@@ -146,8 +147,8 @@ text_sensor:
       name: "Electricity Tariff"
       filters:
         - map:
-          - 0001 -> Low
-          - 0002 -> Normal
+          - 0001 -> Normal
+          - 0002 -> Low
     identification:
       name: "DSMR Identification"
     p1_version:
