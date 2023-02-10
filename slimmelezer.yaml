@@ -1,7 +1,7 @@
 # Note that next to this file a files secrets.yaml must exist with the following content (without the leading #):
 
 #wifi_ssid: "your wifi sid"
-#wifi_password: "your wigi password"
+#wifi_password: "your wifi password"
 
 #Replace your wifi sid and your wifi password with your actual wifi name and password and keep the quotes.
 
@@ -62,9 +62,9 @@ sensor:
       name: "Water Consumed"
       unit_of_measurement: "m³"
       state_class: total_increasing
-#    energy_returned_lux:
-#      name: "Energy Produced Luxembourg"
-#      state_class: total_increasing
+    energy_returned_lux:
+      name: "Electricity Peak Current Month"
+      unit_of_measurement: "kW"
     energy_delivered_tariff1:
       name: "Energy Consumed Tariff 1"
     energy_delivered_tariff2:
