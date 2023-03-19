@@ -139,7 +139,7 @@ sensor:
 #     The conversion factor from m3 to kWh depends on many factors.
 #     Check your (year) bill. It should show the usage in m3 and then also in kWh. Divide the two and you should get the factor which will be a year average value.
     lambda: |-
-      return id(gas_delivered_belgium).state * 11.78;
+      return id(gas_delivered_belgium).state * 11.45;
 
 text_sensor:
   - platform: dsmr
