@@ -60,6 +60,7 @@ sensor:
   - platform: dsmr
     energy_delivered_lux:
       name: "Water Consumed"
+      device_class: water
       unit_of_measurement: "m³"
       state_class: total_increasing
     energy_returned_lux:
