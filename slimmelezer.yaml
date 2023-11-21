@@ -1,5 +1,7 @@
 # Note that next to this file a files secrets.yaml must exist with the following content (without the leading #):
 
+# Configuration file for ESPHome 2023.7.0 or higher
+
 #wifi_ssid: "your wifi sid"
 #wifi_password: "your wifi password"
 
@@ -58,7 +60,7 @@ dsmr:
 
 sensor:
   - platform: dsmr
-    energy_delivered_lux:
+    water_delivered:
       name: "Water Consumed"
       device_class: water
       unit_of_measurement: "m³"
