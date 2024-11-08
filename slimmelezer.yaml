@@ -67,7 +67,7 @@ sensor:
       state_class: total_increasing
     energy_returned_lux:
       name: "Electricity Peak Current Month"
-      unit_of_measurement: "kW"
+      unit_of_measurement: "kWh"
     energy_delivered_tariff1:
       name: "Energy Consumed Tariff 1"
     energy_delivered_tariff2:
